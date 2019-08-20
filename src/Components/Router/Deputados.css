@@ -1,0 +1,12 @@
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+        background-color:grey;
+}
+img{
+    max-height: 100px;
+    max-width: 100px;
+    margin-top: 20px;
+}

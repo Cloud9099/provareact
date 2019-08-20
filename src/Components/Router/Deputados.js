@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import './Deputados.css';
 
 class deputados extends React.Component {
   state = {
@@ -17,8 +18,9 @@ class deputados extends React.Component {
   render() {
     console.log(this.state.deputados.dados)
     return(
-      <div>
-        { this.state.deputados.dados === undefined ? <h3>aguarde</h3>
+      <div className="conteiner">
+
+        { this.state.deputados.dados === undefined ? <h3>AGUARDE..</h3>
           :
           this.state.deputados.dados.map(deputado => (
             <div key={deputado.email}>
@@ -31,7 +33,7 @@ class deputados extends React.Component {
             <h3>{deputado.email}</h3>
             <h4>{deputado.siglaPartido}</h4>
             <h6>{deputado.siglaUf}</h6>
-            <span>Email</span> {deputado.email}
+            <span><b>Email</b></span> {deputado.email}
             <hr/>
             </div>
           ))        
