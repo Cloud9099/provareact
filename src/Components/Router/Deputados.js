@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-class Filmes extends React.Component {
+class deputados extends React.Component {
   state = {
     deputados: []
   }
@@ -43,4 +43,4 @@ class Filmes extends React.Component {
   }
 }
 
-export default Filmes
+export default deputados
